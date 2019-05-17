@@ -33,10 +33,10 @@
       <div id="user_collapse" class="collapse">
         <form method="POST" id="user_form">
           <label>First Name</label>
-          <input type="text" name="first_name" id="first_name" class="form-control">
+          <input required type="text" name="first_name" id="first_name" class="form-control">
           <br>
           <label>Last Name</label>
-          <input type="text" name="last_name" id="last_name" class="form-control">
+          <input required type="text" name="last_name" id="last_name" class="form-control">
           <br>
           <label>Image</label>
           <input type="file" required name="user_image" id="user_image" class="form-control">

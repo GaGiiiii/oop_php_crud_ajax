@@ -55,9 +55,12 @@ $(document).ready(function(){
     }
   });
 
+
+
   $(document).on('click', '.update', function(){
     const user_id = $(this).attr('id');
     const action = "Fetch Single Data";
+    $("#user_image").removeAttr('required');
     $.ajax({
       url: "action.php",
       method: "POST",
@@ -81,6 +84,7 @@ $(document).ready(function(){
   });
 
   $(document).on('click', '#add-user-button', function(){
+    $("#user_image").prop('required', true);
     if($("#button_action").val() == "Edit"){
       $("#first_name").val('');
       $("#last_name").val('');
